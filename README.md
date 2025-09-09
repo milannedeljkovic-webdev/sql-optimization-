@@ -25,19 +25,12 @@ SELECT * FROM Orders WHERE YEAR(OrderDate) = 2023;
 
 ---
 
-2. Run with Docker Compose
-docker-compose up --build
-
----
-
-3. Access APIs
-
-Users API → http://localhost:5000/api/users
-
-Orders API → http://localhost:5001/api/orders
+✅ Optimized query
+CREATE INDEX IX_Orders_OrderDate ON Orders(OrderDate);
+SELECT * FROM Orders WHERE OrderDate BETWEEN '2023-01-01' AND '2023-12-31';
 
 ---
 
 📫 About Me
 
-Backend Developer specializing in C#, .NET Core, Microservices, Docker, and Cloud.
+Backend Developer with strong skills in C#, .NET, SQL optimization, and performance tuning.
