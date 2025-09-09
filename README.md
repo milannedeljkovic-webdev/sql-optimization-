@@ -1,0 +1,2 @@
+# sql-optimization-
+primeri optimizacije
